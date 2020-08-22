@@ -7,6 +7,10 @@ export default function Layout({ children, pageTitle, ...props }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{pageTitle}</title>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       <section>

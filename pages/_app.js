@@ -1,7 +1,20 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import "materialize-css/dist/css/materialize.min.css";
+import $ from "jquery";
+import { useEffect } from "react";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+if (typeof window !== "undefined") {
+  window.$ = $;
+  window.jQuery = $;
+  require("materialize-css");
 }
 
-export default MyApp
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    M.AutoInit();
+  });
+
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
