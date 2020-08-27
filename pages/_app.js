@@ -1,19 +1,9 @@
-import "../styles/globals.css";
-import "materialize-css/dist/css/materialize.min.css";
 import $ from "jquery";
-import { useEffect } from "react";
-
-if (typeof window !== "undefined") {
-  window.$ = $;
-  window.jQuery = $;
-  require("materialize-css");
-}
+import "hamburgers/dist/hamburgers.min.css";
+import "../styles/styles.css";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    M.AutoInit();
-  });
-
   return <Component {...pageProps} />;
 }
 

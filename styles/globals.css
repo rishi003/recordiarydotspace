@@ -1,5 +1,13 @@
-@tailwind base;
+nav ul li a,
+header ul li a {
+  font-family: "Lustria", serif;
+}
 
-@tailwind components;
-
-@tailwind utilities;
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before,
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  @apply bg-white;
+}
