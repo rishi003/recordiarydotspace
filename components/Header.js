@@ -18,7 +18,7 @@ export default function Header() {
           </Link>
           <nav className="inline-block">
             <button
-              className="hamburger hamburger--emphatic inline-block sm:inline-block md:inline-block lg:hidden xl:hidden"
+              className="hamburger hamburger--emphatic inline-block w-auto sm:inline-block md:inline-block lg:hidden xl:hidden"
               type="button"
               aria-label="Menu"
               aria-controls="navigation"
@@ -28,8 +28,8 @@ export default function Header() {
                 $("#navigation-mob").toggleClass("hidden");
               }}
             >
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
               </span>
             </button>
             <ul

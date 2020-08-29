@@ -10,4 +10,10 @@ header ul li a {
 .hamburger-inner:after,
 .hamburger-inner:before {
   @apply bg-white;
+  @apply w-8;
+}
+
+footer h1,
+footer p {
+  font-family: "Lustria", serif;
 }

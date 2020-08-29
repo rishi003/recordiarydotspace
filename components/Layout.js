@@ -1,7 +1,14 @@
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 
-export default function Layout({ children, pageTitle, ...props }) {
+export default function Layout({
+  children,
+  pageTitle,
+  description,
+  socialLinks,
+  ...props
+}) {
   return (
     <>
       <Head>
@@ -19,6 +26,10 @@ export default function Layout({ children, pageTitle, ...props }) {
           href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
           rel="stylesheet"
         ></link>
+        <link
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
       </Head>
       <Header />
       <section>
@@ -26,7 +37,11 @@ export default function Layout({ children, pageTitle, ...props }) {
           <div className="content">{children}</div>
         </div>
       </section>
-      <footer>Built By Me</footer>
+      <Footer
+        title={pageTitle}
+        description={description}
+        socialLinks={socialLinks}
+      ></Footer>
     </>
   );
 }
