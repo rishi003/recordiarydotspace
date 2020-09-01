@@ -3,12 +3,12 @@ import FontAwesome from "react-fontawesome";
 export default function Footer({ title, description, socialLinks, ...props }) {
   return (
     <>
-      <footer className="flex flex-col grid-cols-4 bg-black text-white md:grid">
+      <footer className="flex flex-col grid-cols-4 bg-red-300 p-2 md:grid">
         <div className=" col-span-3 flex flex-col m-3">
           <h1 className="text-5xl">{title}</h1>
-          <p className="p-3 max-w-3xl">{description}</p>
+          <p className="p-3 max-w-3xl bg-white rounded-lg">{description}</p>
         </div>
-        <div className="col-span-1 flex flex-row w-3/5 mx-auto justify-between md:flex-col md:my-auto">
+        <div className="social-links col-span-1 flex flex-row w-3/5 mx-auto justify-between bg-transparent rounded-lg  font-bold md:flex-col md:my-auto md:bg-white">
           <a href="#">
             <div className="flex flow-row items-center">
               <FontAwesome

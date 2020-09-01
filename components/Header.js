@@ -4,16 +4,19 @@ import $ from "jquery";
 export default function Header() {
   return (
     <>
-      <header className="header p-2 bg-black">
+      <header className="header p-2 bg-red-300">
         <div className="container mx-auto flex justify-between items-center ">
           <Link href="/">
             <a>
-              <div className="flex-shrink-0">
+              <p className="logo-text text-5xl w-5 leading-tight">
+                Rishabh Awatani
+              </p>
+              {/* <div className="flex-shrink-0">
                 <img
                   src="/finalLogo.png"
                   className=" w-20 sm:w-20 md:w-24  lg:w-24 xl:w-32"
                 ></img>
-              </div>
+              </div> */}
             </a>
           </Link>
           <nav className="inline-block">
@@ -34,12 +37,12 @@ export default function Header() {
             </button>
             <ul
               id="navigation"
-              className="flex-row items-center text-white text-2xl hidden sm:hidden md:hidden lg:flex xl:flex "
+              className="flex-row items-center text-2xl hidden sm:hidden md:hidden lg:flex xl:flex "
             >
               <li className="w-10/12">
                 <Link href="/">
                   <a className="w-full">
-                    <div className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
+                    <div className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
                       Home
                     </div>
                   </a>
@@ -48,7 +51,7 @@ export default function Header() {
               <li className="w-10/12">
                 <Link href="/">
                   <a className="w-full">
-                    <div className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
+                    <div className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
                       Posts
                     </div>
                   </a>
@@ -57,7 +60,7 @@ export default function Header() {
               <li className="w-10/12">
                 <Link href="/">
                   <a className="w-full">
-                    <div className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
+                    <div className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
                       Services
                     </div>
                   </a>
@@ -66,7 +69,7 @@ export default function Header() {
               <li className="w-10/12">
                 <Link href="/">
                   <a className="w-full">
-                    <div className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
+                    <div className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
                       Contact
                     </div>
                   </a>
@@ -77,7 +80,7 @@ export default function Header() {
         </div>
         <ul
           id="navigation-mob"
-          className=" flex flex-col items-center mt-5 text-white text-2xl transition duration-500  ease-in-out hidden"
+          className=" flex flex-col items-center mt-5 text-2xl transition duration-500  ease-in-out hidden"
         >
           <li className="w-10/12">
             <Link href="/">
@@ -87,7 +90,7 @@ export default function Header() {
                     $("#navigation-mob").toggleClass("hidden");
                     $(".hamburger").toggleClass("is-active");
                   }}
-                  className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
+                  className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
                 >
                   Home
                 </div>
@@ -102,7 +105,7 @@ export default function Header() {
                     $("#navigation-mob").toggleClass("hidden");
                     $(".hamburger").toggleClass("is-active");
                   }}
-                  className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
+                  className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
                 >
                   Posts
                 </div>
@@ -117,7 +120,7 @@ export default function Header() {
                     $("#navigation-mob").toggleClass("hidden");
                     $(".hamburger").toggleClass("is-active");
                   }}
-                  className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
+                  className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
                 >
                   Services
                 </div>
@@ -132,7 +135,7 @@ export default function Header() {
                     $("#navigation-mob").toggleClass("hidden");
                     $(".hamburger").toggleClass("is-active");
                   }}
-                  className="cursor-pointer w-full text-center px-10 py-3 border-black transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
+                  className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
                 >
                   Contact
                 </div>

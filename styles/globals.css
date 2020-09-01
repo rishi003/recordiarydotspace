@@ -3,17 +3,20 @@ header ul li a {
   font-family: "Lustria", serif;
 }
 
+.logo-text {
+  font-family: "Libre Barcode 39 Text", cursive;
+}
+
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner:after,
 .hamburger.is-active .hamburger-inner:before,
 .hamburger-inner,
 .hamburger-inner:after,
 .hamburger-inner:before {
-  @apply bg-white;
   @apply w-8;
 }
 
 footer h1,
-footer p {
+footer .social-links {
   font-family: "Lustria", serif;
 }

@@ -30,6 +30,10 @@ export default function Layout({
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       <section>

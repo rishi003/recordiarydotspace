@@ -4,11 +4,16 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from "../../components/Layout";
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+export default function BlogPost({
+  siteTitle,
+  description,
+  frontmatter,
+  markdownBody,
+}) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+    <Layout pageTitle={siteTitle} description={description}>
       <Link href="/">
         <a>Back to post list</a>
       </Link>
@@ -33,6 +38,7 @@ export async function getStaticProps({ ...ctx }) {
   return {
     props: {
       siteTitle: config.title,
+      description: config.description,
       frontmatter: data.data,
       markdownBody: data.content,
     },
