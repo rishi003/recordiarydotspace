@@ -80,7 +80,7 @@ export default function Header() {
         </div>
         <ul
           id="navigation-mob"
-          className=" flex flex-col items-center mt-5 text-2xl transition duration-500  ease-in-out hidden"
+          className="animate__animated animate__fadeInDown flex flex-col items-center mt-5 text-2xl hidden"
         >
           <li className="w-10/12">
             <Link href="/">
