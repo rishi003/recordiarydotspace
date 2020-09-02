@@ -1,7 +1,6 @@
 import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-
 import Layout from "../../components/Layout";
 
 export default function BlogPost({
@@ -17,7 +16,7 @@ export default function BlogPost({
       <Link href="/">
         <a>Back to post list</a>
       </Link>
-      <article>
+      <article className="markdown-body">
         <h1>{frontmatter.title}</h1>
         <p>By {frontmatter.author}</p>
         <div>
