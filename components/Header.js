@@ -52,7 +52,7 @@ export default function Header() {
                 <Link href="/">
                   <a className="w-full">
                     <div className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
-                      Posts
+                      Blog
                     </div>
                   </a>
                 </Link>
@@ -61,7 +61,7 @@ export default function Header() {
                 <Link href="/">
                   <a className="w-full">
                     <div className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700">
-                      Services
+                      Projects
                     </div>
                   </a>
                 </Link>
@@ -107,7 +107,7 @@ export default function Header() {
                   }}
                   className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
                 >
-                  Posts
+                  Blog
                 </div>
               </a>
             </Link>
@@ -122,7 +122,7 @@ export default function Header() {
                   }}
                   className="cursor-pointer w-full text-center px-10 py-3 border-red-300 transition duration-500 ease-in-out transform hover:bg-white hover:text-black hover:-translate-x-2 hover:-translate-y-2 border-solid border-b-4 border-r-4 hover:border-red-700"
                 >
-                  Services
+                  Projects
                 </div>
               </a>
             </Link>

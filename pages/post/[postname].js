@@ -2,6 +2,7 @@ import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Layout from "../../components/Layout";
+import FontAwesome from "react-fontawesome";
 
 export default function BlogPost({
   siteTitle,
@@ -13,16 +14,31 @@ export default function BlogPost({
 
   return (
     <Layout pageTitle={siteTitle} description={description}>
-      <Link href="/">
-        <a>Back to post list</a>
-      </Link>
-      <article className="markdown-body">
-        <h1>{frontmatter.title}</h1>
-        <p>By {frontmatter.author}</p>
-        <div>
-          <ReactMarkdown source={markdownBody} />
-        </div>
-      </article>
+      <div className="inline-flex justify-center mx-1">
+        <article className="md:w-3/5">
+          <h1 className="text-6xl mt-4 leading-tight">{frontmatter.title}</h1>
+          <hr className="my-5"></hr>
+          <p className="mx-4 text-right text-lg">
+            <em>{frontmatter.author}</em>
+          </p>
+          <hr className="my-5"></hr>
+          <div className="markdown-body">
+            <ReactMarkdown source={markdownBody} />
+          </div>
+          <hr className="my-5"></hr>
+          <Link href="/">
+            <a>
+              <div className="text-xl bg-teal-500 text-white py-2 px-4 my-5 inline-flex items-center border rounded-full">
+                <FontAwesome
+                  name="fas fa-arrow-left"
+                  className="pr-2 animation-target"
+                ></FontAwesome>
+                Back to posts
+              </div>
+            </a>
+          </Link>
+        </article>
+      </div>
     </Layout>
   );
 }

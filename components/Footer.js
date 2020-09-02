@@ -8,7 +8,7 @@ export default function Footer({ title, description, socialLinks, ...props }) {
           <h1 className="text-5xl">{title}</h1>
           <p className="p-3 max-w-3xl bg-white rounded-lg">{description}</p>
         </div>
-        <div className="social-links col-span-1 flex flex-row w-3/5 mx-auto justify-between bg-transparent rounded-lg  font-bold md:flex-col md:my-auto md:bg-white">
+        <div className="social-links col-span-1 flex flex-row w-3/5 mx-auto justify-between bg-transparent rounded-lg  font-bold md:flex-col md:my-auto md:bg-white md:px-2 md:py-4">
           <a href="#">
             <div className="flex flow-row items-center">
               <FontAwesome

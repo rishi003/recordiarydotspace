@@ -1,6 +1,6 @@
 ---
 title: "Hello, world!"
-author: "Rishabh"
+author: "Wed, 2nd Sep 2020"
 titleImage: https://i.ibb.co/txjTzqW/humming-Bird.jpg
 titleImageName: "A humming bird"
 description: "A sample post to demonstrate how to make better websites which are dynamic but database independent."
