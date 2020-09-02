@@ -25,12 +25,26 @@ article p {
   @apply text-lg;
 }
 
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.markdown-body ul {
+  list-style: disc;
+}
+
+.markdown-body ol {
+  list-style: decimal;
+}
+
 .animation-target {
   -webkit-animation: animation 1500ms linear infinite both;
   animation: animation 1500ms linear infinite both;
 }
-
-/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bl%3A1%2Cs%3A%5B%7BT%3A%22t%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A500%2Cf%3A%7Bx%3A20%2Cy%3A0%7D%2Ct%3A%7Bx%3A0%2Cy%3A0%7D%2Cs%3A1%2Cb%3A4%7D%5D%7D */
 
 @-webkit-keyframes animation {
   0% {

@@ -14,9 +14,11 @@ export default function BlogPost({
 
   return (
     <Layout pageTitle={siteTitle} description={description}>
-      <div className="inline-flex justify-center mx-1">
+      <div className="md:flex items-center justify-center">
         <article className="md:w-3/5">
-          <h1 className="text-6xl mt-4 leading-tight">{frontmatter.title}</h1>
+          <h1 className="text-6xl mt-4 mx-2 leading-tight">
+            {frontmatter.title}
+          </h1>
           <hr className="my-5"></hr>
           <p className="mx-4 text-right text-lg">
             <em>{frontmatter.author}</em>
@@ -28,7 +30,7 @@ export default function BlogPost({
           <hr className="my-5"></hr>
           <Link href="/">
             <a>
-              <div className="text-xl bg-teal-500 text-white py-2 px-4 my-5 inline-flex items-center border rounded-full">
+              <div className="text-xl bg-teal-500 text-white py-2 px-4 m-5 inline-flex items-center border rounded-full">
                 <FontAwesome
                   name="fas fa-arrow-left"
                   className="pr-2 animation-target"
