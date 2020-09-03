@@ -34,7 +34,7 @@ export default function Layout({
           href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap"
           rel="stylesheet"
         ></link>
-        <link href="/styles/style.css" rel="stylesheet" type="text/css"></link>
+        <link href="/static/style.css" rel="stylesheet" type="text/css"></link>
       </Head>
       <Header />
       <section>
