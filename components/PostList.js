@@ -8,7 +8,7 @@ export default function PostList({ posts }) {
   return (
     <div className="post-list" id="post-list">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="p-8 text-4.5xl text-gray-900 sm:text-5xl">Blog</h2>
+        <h2 className="p-8 text-5xl text-gray-900 sm:text-5xl">Blog</h2>
         <hr className="w-3/6"></hr>
       </div>
       {!posts && <div>No Posts!</div>}
