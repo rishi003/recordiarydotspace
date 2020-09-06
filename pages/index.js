@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
+import Introduction from "../components/Introduction";
 import matter from "gray-matter";
 
 const Index = ({ posts, title, description, socialLinks, ...props }) => {
@@ -10,6 +11,7 @@ const Index = ({ posts, title, description, socialLinks, ...props }) => {
       socialLinks={socialLinks}
     >
       <main>
+        <Introduction />
         <PostList posts={posts} />
       </main>
     </Layout>

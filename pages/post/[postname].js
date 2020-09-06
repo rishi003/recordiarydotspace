@@ -28,7 +28,7 @@ export default function BlogPost({
             <ReactMarkdown source={markdownBody} />
           </div>
           <hr className="my-5"></hr>
-          <Link href="/">
+          <Link href="/#post-list">
             <a>
               <div className="text-xl bg-teal-500 text-white py-2 px-4 m-5 inline-flex items-center border rounded-full">
                 <FontAwesome

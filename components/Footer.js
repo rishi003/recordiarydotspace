@@ -3,7 +3,10 @@ import FontAwesome from "react-fontawesome";
 export default function Footer({ title, description, socialLinks, ...props }) {
   return (
     <>
-      <footer className="flex flex-col grid-cols-4 bg-red-300 p-2 md:grid">
+      <footer
+        className="flex flex-col grid-cols-4 bg-red-300 p-2 md:grid"
+        id="contact"
+      >
         <div className=" col-span-3 flex flex-col m-3">
           <h1 className="text-5xl">{title}</h1>
           <p className="p-3 max-w-3xl bg-white rounded-lg">{description}</p>

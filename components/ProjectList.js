@@ -2,7 +2,7 @@ import Link from "next/link";
 import $ from "jquery";
 import useEffect from "react";
 
-export default function PostList({ posts }) {
+export default function ProjectList({ projects }) {
   if (posts === "undefined") return null;
 
   return (
@@ -11,28 +11,27 @@ export default function PostList({ posts }) {
         <h2 className="p-8 text-4.5xl text-gray-900 sm:text-5xl">Blog</h2>
         <hr className="w-3/6"></hr>
       </div>
-      {!posts && <div>No Posts!</div>}
+      {!projects && <div>No Projects!</div>}
       <div className="grid grid-cols-1 gap-8 p-5 md:grid-cols-2 lg:grid-cols-3">
-        {posts &&
-          posts.map((post) => {
+        {projects &&
+          projects.map((project) => {
             return (
               <div
-                key={post.slug}
+                key={project.slug}
                 className="postItem rounded-lg p-3 shadow-2xl border-solid border-transparent border-2 transition duration-500 ease-in-out hover:border-gray-400"
               >
-                <Link href={{ pathname: `/post/${post.slug}` }}>
+                <Link href={{ pathname: `/post/${project.slug}` }}>
                   <a>
                     <div className="">
                       <img
-                        src={post.frontmatter.titleImage}
+                        src={project.frontmatter.titleImage}
                         className=" w-full h-64 object-cover pb-2"
-                        alt={post.frontmatter.titleImageName}
+                        alt={project.frontmatter.titleImageName}
                       ></img>
                       <h3 className="text-3xl leading-tight pt-2 pb-2 border-b-2 border-solid border-gray-400">
-                        {post.frontmatter.title}
+                        {project.frontmatter.title}
                       </h3>
-
-                      <p className="p-2">{post.frontmatter.description}</p>
+                      <p className="p-2">{project.frontmatter.description}</p>
                     </div>
                   </a>
                 </Link>
