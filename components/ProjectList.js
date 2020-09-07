@@ -12,7 +12,7 @@ export default function ProjectList({ projects }) {
       id="project-list"
     >
       <div className="flex flex-col justify-center items-center">
-        <h2 className="p-8 text-4.5xl text-gray-900 sm:text-5xl">Projects</h2>
+        <h2 className="p-8 text-5xl text-gray-900 sm:text-5xl">Projects</h2>
         <hr className="w-3/6"></hr>
       </div>
       {!projects && <div>No Projects!</div>}
