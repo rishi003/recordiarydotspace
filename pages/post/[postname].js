@@ -8,12 +8,17 @@ export default function BlogPost({
   siteTitle,
   description,
   frontmatter,
+  socialLinks,
   markdownBody,
 }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout pageTitle={siteTitle} description={description}>
+    <Layout
+      pageTitle={siteTitle}
+      description={description}
+      socialLinks={socialLinks}
+    >
       <div className="md:flex items-center justify-center">
         <article className="md:w-3/5">
           <h1 className="text-6xl mt-4 mx-2 leading-tight">
@@ -56,6 +61,12 @@ export async function getStaticProps({ ...ctx }) {
     props: {
       siteTitle: config.title,
       description: config.description,
+      socialLinks: {
+        facebook: config.facebook,
+        instagram: config.instagram,
+        twitter: config.twitter,
+        linkedin: config.linkedin,
+      },
       frontmatter: data.data,
       markdownBody: data.content,
     },
