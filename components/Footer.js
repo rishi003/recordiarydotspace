@@ -12,7 +12,7 @@ export default function Footer({ title, description, socialLinks, ...props }) {
           <p className="p-3 max-w-3xl bg-white rounded-lg">{description}</p>
         </div>
         <div className="social-links col-span-1 flex flex-row w-3/5 mx-auto justify-between bg-transparent rounded-lg  font-bold md:flex-col md:my-auto md:bg-white md:px-2 md:py-4">
-          <a href="#">
+          <a href={socialLinks.facebook}>
             <div className="flex flow-row items-center">
               <FontAwesome
                 name="fab fa-facebook-square"
@@ -22,7 +22,7 @@ export default function Footer({ title, description, socialLinks, ...props }) {
               <p className="hidden md:inline">Facebook</p>
             </div>
           </a>
-          <a href="#">
+          <a href={socialLinks.instagram}>
             <div className="flex flow-row items-center">
               <FontAwesome
                 name="fab fa-instagram"
@@ -32,7 +32,7 @@ export default function Footer({ title, description, socialLinks, ...props }) {
               <p className="hidden md:inline">Instagram</p>
             </div>
           </a>
-          <a href="#">
+          <a href={socialLinks.twitter}>
             <div className="flex flow-row items-center">
               <FontAwesome
                 name="fab fa-twitter-square"
@@ -42,7 +42,7 @@ export default function Footer({ title, description, socialLinks, ...props }) {
               <p className="hidden md:inline">Twitter</p>
             </div>
           </a>
-          <a href="#">
+          <a href={socialLinks.linkedin}>
             <div className="flex flow-row items-center">
               <FontAwesome
                 name="fab fa-linkedin"

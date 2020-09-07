@@ -1,7 +1,10 @@
 export default function Introduction() {
   return (
     <>
-      <div className="introduction--part bg-red-300 object-cover tracking-wide relative">
+      <div
+        className="introduction--part bg-red-300 object-cover tracking-wide relative"
+        id="introduction-pane"
+      >
         <div className="absolute inset-0 flex items-center justify-start text-4xl text-white mx-10 sm:text-6.5xl md:text-6.5xl lg:text-6.5xl xl:text-7xl">
           <h2>
             Think.

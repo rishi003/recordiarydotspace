@@ -1,9 +1,17 @@
 import Layout from "../components/Layout";
 import PostList from "../components/PostList";
 import Introduction from "../components/Introduction";
+import ProjectList from "../components/ProjectList";
 import matter from "gray-matter";
 
-const Index = ({ posts, title, description, socialLinks, ...props }) => {
+const Index = ({
+  posts,
+  projects,
+  title,
+  description,
+  socialLinks,
+  ...props
+}) => {
   return (
     <Layout
       pageTitle={title}
@@ -13,6 +21,8 @@ const Index = ({ posts, title, description, socialLinks, ...props }) => {
       <main>
         <Introduction />
         <PostList posts={posts} />
+        {/* <hr className="my-12 mx-20"></hr> */}
+        <ProjectList projects={projects} />
       </main>
     </Layout>
   );
@@ -39,9 +49,27 @@ export async function getStaticProps() {
     return data;
   })(require.context("../posts", true, /\.md$/));
 
+  const projects = ((context) => {
+    const keys = context.keys();
+    const values = keys.map(context);
+
+    const data = keys.map((key, index) => {
+      let slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
+      const value = values[index];
+      const document = matter(value.default);
+      return {
+        frontmatter: document.data,
+        markdownBody: document.content,
+        slug,
+      };
+    });
+    return data;
+  })(require.context("../projects", true, /\.md$/));
+
   return {
     props: {
       posts,
+      projects,
       title: configData.default.title,
       description: configData.default.description,
       socialLinks: {
