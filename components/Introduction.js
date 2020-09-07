@@ -14,7 +14,7 @@ export default function Introduction() {
             Create.
           </h2>
           <img
-            src="https://i.ibb.co/8640shW/resume-pic.png"
+            src="https://i.ibb.co/GHPvj4x/resume-pic-min.png"
             className="w-2/6  rounded-full m-auto mr-0 self-start shadow-3xl md:shadow-4xl md:mr-auto"
           ></img>
         </div>
