@@ -19,7 +19,7 @@ export default function Introduction() {
           ></img>
         </div>
         <img
-          src="keyboard.png"
+          src="https://i.ibb.co/8640shW/resume-pic.png"
           alt="Introduction abstract image of a keyboard"
         ></img>
       </div>
