@@ -14,6 +14,10 @@ export default function Layout({
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="A portfolio website and blog maintained by Rishabh Awatani in which he posts about his experiences, hobbies and technology."
+        />
         <title>{`${pageTitle} | ${titleDescription}`}</title>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -36,13 +40,16 @@ export default function Layout({
           rel="stylesheet"
         ></link>
         <link href="/static/style.css" rel="stylesheet" type="text/css"></link>
+        <html lang="en"></html>
       </Head>
       <Header />
-      <section>
-        <div className="layout">
-          <div className="content">{children}</div>
-        </div>
-      </section>
+      <body>
+        <section>
+          <div className="layout">
+            <div className="content">{children}</div>
+          </div>
+        </section>
+      </body>
       <Footer
         title={pageTitle}
         description={description}
