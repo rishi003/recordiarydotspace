@@ -16,6 +16,7 @@ export default function BlogPost({
   return (
     <Layout
       pageTitle={siteTitle}
+      titleDescription={frontmatter.title}
       description={description}
       socialLinks={socialLinks}
     >

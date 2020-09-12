@@ -1,6 +1,5 @@
 import Link from "next/link";
 import $ from "jquery";
-import useEffect from "react";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;

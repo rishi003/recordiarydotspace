@@ -1,6 +1,4 @@
 import Link from "next/link";
-import $ from "jquery";
-import useEffect from "react";
 import FontAwesome from "react-fontawesome";
 
 export default function ProjectList({ projects }) {
@@ -8,14 +6,14 @@ export default function ProjectList({ projects }) {
 
   return (
     <div
-      className="post-list bg-gray-300 border-t-2 border-solid  border-gray-700"
+      className="post-list bg-gray-200 border-t-2 border-solid  border-gray-700"
       id="project-list"
     >
       <div className="flex flex-col justify-center items-center">
         <h2 className="p-8 text-5xl text-gray-900 sm:text-5xl">Projects</h2>
         <hr className="w-3/6"></hr>
       </div>
-      {!projects && <div>No Projects!</div>}
+      {!projects && <div>I am still uploading projects.</div>}
       <div className="grid grid-cols-1 gap-8 p-5 md:grid-cols-2 lg:grid-cols-3">
         {projects &&
           projects.map((project) => {

@@ -10,11 +10,13 @@ const Index = ({
   title,
   description,
   socialLinks,
+  titleDescription,
   ...props
 }) => {
   return (
     <Layout
       pageTitle={title}
+      titleDescription={titleDescription}
       description={description}
       socialLinks={socialLinks}
     >
@@ -71,6 +73,7 @@ export async function getStaticProps() {
       posts,
       projects,
       title: configData.default.title,
+      titleDescription: configData.default.titeldescription,
       description: configData.default.description,
       socialLinks: {
         facebook: configData.default.facebook,
