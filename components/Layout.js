@@ -43,13 +43,13 @@ export default function Layout({
         <html lang="en"></html>
       </Head>
       <Header />
-      <body>
-        <section>
-          <div className="layout">
-            <div className="content">{children}</div>
-          </div>
-        </section>
-      </body>
+
+      <section>
+        <div className="layout">
+          <div className="content">{children}</div>
+        </div>
+      </section>
+
       <Footer
         title={pageTitle}
         description={description}
