@@ -3,8 +3,8 @@ title: "Webpage without CSS"
 titleImage: https://i.ibb.co/2ywMy0X/image-for-blog-post-21.jpg
 titleImageName: "a snapshot of CSS code"
 github: "https://github.com/rishi003/Without-CSS"
-description: "A simple application developed in NodeJS which scrapes down a webpage and renders it in pure HTML without any CSS styling."
-technologies:["NodeJS","Express","Puppeteer","Materialize CSS"]
+description: "A simple application which scrapes down the entire content of the web page and renders it without CSS"
+technologies: ["NodeJS","Express","Puppeteer","Materialize CSS"]
 ---
 
 The frontend of a website can primarily be divided into two components:
