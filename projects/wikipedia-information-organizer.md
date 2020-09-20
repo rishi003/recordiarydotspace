@@ -4,7 +4,7 @@ titleImage: https://source.unsplash.com/D8QbsYyiFmw/1600x900
 titleImageName: "Wikipedia page for a search"
 github: "https://github.com/rishi003/Wiki-Information-Organizer"
 description: "A simple application developed in NodeJS which scrapes down a Wikipedia page and extracts out all the images and useful links to external sources."
-technologies:["NodeJS","Express","Puppeteer","Materialize CSS"]
+technologies: ["NodeJS","Express","Puppeteer","Materialize CSS"]
 ---
 
 The frontend of a website can primarily be divided into two components:
