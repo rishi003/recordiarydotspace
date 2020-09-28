@@ -20,7 +20,7 @@ export default function ProjectList({ projects }) {
             return (
               <div
                 key={project.slug}
-                className="postItem rounded-lg p-3 shadow-2xl bg-white border-solid border-transparent border-2 transition duration-500 ease-in-out hover:border-gray-400"
+                className="flex flex-col justify-between postItem rounded-lg p-3 shadow-2xl bg-white border-solid border-transparent border-2 transition duration-500 ease-in-out hover:border-gray-400"
               >
                 <Link href={{ pathname: `/project/${project.slug}` }}>
                   <a>
