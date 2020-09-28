@@ -6,13 +6,13 @@ titleImageName: "Glasses over a notepad in which a big project is being planned.
 description: "Getting overwhelmed by the size and complexity of a new project or task cannot be avoided but there are some tips and techniques you can follow to manage that crushing brain fog."
 ---
 
-As a developer you can never be sure about what will be served to you next but you should not look down on this aspect as this is what makes the job interesting and challenging enough that you never get bored. Looking forward to new challenges is not everyone's cup of tea but with some tips and techniques, anyone can learn to manage toughest of the situations and come through it with all stars
+As a developer you can never be sure about what you will be served next. But that is not something to ne afraid of, as it is what makes the job interesting and challenging enough to never get bored. Although not everyone looks up to new challenges and indeed they can be very tedious but with some tips and techniques, anyone can learn to manage toughest of the situations and triumph over them. Here is something that works for me, keep reading to find out if it will work for you.
 
 ![Glasses over a notepad in which a big project is being planned.](https://source.unsplash.com/HsTnjCVQ798/1600x900)
 
 ### Checklists:
 
-Nothing works better than a checklist when it comes to dividing a huge task into smaller pieces and focusing on one thing at a time. If you want to be a successful developer, this is a must have skill and I can promise you it can transform any kind of complex activity into a group of small manageable and  less overwhelming tasks.
+Nothing works better than a checklist when it comes to dividing a huge task into smaller chunks which in turn help you to focus on one thing at a time. If you want to be a successful developer, this is a must have skill and I can promise you that it can transform any kind of complex activity into a manageable and  less overwhelming task.
 
 There is no hard and fast rule to create one but if you like, you can follow some of the guidelines below:
 
@@ -27,16 +27,16 @@ You will be astound by the effect it has on your brain and thought process as th
 
 ---
 
-#### FAQ
+#### FAQs
 
 *Will it work in a project where tasks turn out to be deeply interdependent?* 
 
-> You can rest assured that this will not only let you concentrate on an individual task but also help you in juggle between them effectively as you can keep track of your activities with little note taking.
+> You can be assured that this will not only let you concentrate on an individual task but also help you juggle between them efficiently as you can keep track of your activities with little note taking.
 
 *Is it necessary for it to be written?*
 
-> I am always in favour of written over electronic way of recording a task as it also gives me an opportunity to reflect over what I will be looking forward to as well as increase the chances of remembering it to form a bigger picture.
+> I am always in the favour of writing a task down rather than using an electronic way of recording a task as it gives me an opportunity to reflect on what I will be looking forward to and it increase the chances of remembering leading to form a bigger picture.
 
 *How is it better than bug/requirement tracking system?*
 
-> I will not say that it is a substitute of a successful bug/requirement tracking system but it is something that will aid in the process of planning. It is scientifically proven that information is organized in a better way when you write it down; there is a connection between your hands and your brain. It thus creates an understanding of the task or project which is invaluable. 
+> I will not say that it is a substitute of a successful bug/requirement tracking system but it is something that will aid in the process of planning. It is scientifically proven that information is organized in a better way when you write it down; there is a connection between your hands and your brain. It will thus create an understanding of the task or project, which is invaluable. 
